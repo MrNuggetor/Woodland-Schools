@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Woodland Schools | Smart Timetable</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/webp" href="whhs-logo.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="timetable-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="brand">
+        <img class="brand-logo" src="whhs-logo.webp" alt="Woodland Hills Schools logo" />
+        <div>
+          <p class="brand-title">Woodland Schools</p>
+          <p class="brand-subtitle">Hard work is all.</p>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+<a href="admissions.html">Admissions</a>
+        <a href="news.html">News & Events</a>
+      <a href="dashboard.html">Dashboard</a>
+<a href="contact.html">Contact</a>
+        
+      
+        <a href="timetable.html">Timetable</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="high-flyers.html">High Flyers</a>
+        <a href="policies.html">Discipline</a>
+      </nav>
+<button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="academics.html">Academics</a>
+      <a href="facilities.html">Facilities</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="news.html">News & Events</a>
+      <a href="dashboard.html">Dashboard</a>
+<a href="timetable.html" class="active">Timetable</a>
+      <a href="high-flyers.html">High Flyers</a>
+      <a href="contact.html">Contact</a>
+      <a href="policies.html">Discipline</a>
+
+
+</div>
+  </header>
+
+  <main id="main" class="site-main">
+    <section class="hero">
+      <div class="hero-banner reveal" data-anim="slide">
+        <img class="crest" src="whhs-logo.webp" alt="Woodland Hills Schools crest" />
+        <p class="eyebrow">Smart Timetable Generator</p>
+        <h1>Create a personal study plan in minutes.</h1>
+        <p class="lead">Enter your class, subjects, and activities. We build your weekly timetable and reminders.</p>
+      </div>
+      <div class="hero-card float reveal" data-anim="scale">
+        <h3>Student-Friendly</h3>
+        <p>Easy input for Nursery, Primary, and Secondary learners.</p>
+        <h3>Study Reminders</h3>
+        <p>Auto-suggested reminders for revision and assignments.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title reveal" data-anim="fade">
+        <h2>Build Your Timetable</h2>
+        <p>Fill in details and generate your weekly plan.</p>
+      </div>
+      <form class="card form-grid reveal" data-anim="slide" data-timetable-form>
+        <label>
+          Class
+          <input type="text" name="studentClass" placeholder="e.g., JSS 2, SS 1, Primary 6" required />
+        </label>
+        <label>
+          Subjects (comma separated)
+          <textarea name="subjects" rows="3" placeholder="e.g., Mathematics, English, Basic Science" required></textarea>
+        </label>
+        <label>
+          Activities (comma separated)
+          <textarea name="activities" rows="3" placeholder="e.g., Debate Club, Football, Choir" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Generate Timetable</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <div class="section-title reveal" data-anim="fade">
+        <h2>Your Personal Timetable</h2>
+        <p>Generated plan appears below.</p>
+      </div>
+      <div class="card reveal" data-anim="scale" data-timetable-output>
+        <p>Fill the form above to generate your timetable.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title reveal" data-anim="fade">
+        <h2>Study Reminders</h2>
+        <p>Suggested reminders to keep you on track.</p>
+      </div>
+      <div class="card reveal" data-anim="slide" data-reminder-output>
+        <p>Reminders will appear here after generating your timetable.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">Woodland Hills Secondary School</p>
+        <p>1, Jaiyeoba Street, Shasha, Akowonjo, Lagos, Nigeria.</p>
+        <p>Tel: 07038595653, 09097615588, 08066028293</p>
+        <p>Email: info@woodlandschools.com.ng, woodlandschoolng@gmail.com</p>
+        <p>Website: www.woodlandschools.com.ng</p>
+      </div>
+      <div>
+        <p class="footer-title">Woodland Nur. and Pri. School</p>
+        <p>35/37 Odebunmi Afonka Street, Shasha, Akowonjo, Lagos, Nigeria.</p>
+        <p>Tel: 08028289192, 08030637327, 08174096918</p>
+      </div>
+      <div>
+        <p class="footer-title">Social Media</p>
+        <p>Facebook: Woodland Schools</p>
+        <p>WhatsApp: 09099997945</p>
+        <p>Instagram: Woodlandschoolng</p>
+        <p>Twitter: @WoodlandSchs</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
